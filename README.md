@@ -31,3 +31,7 @@ Den aksepterer også parameter i i URL blant annet ved
 Det er også https://api.tvmaze.com/search/shows?q=QUERY (som lar deg søke etter tv serier under QUERY hvis du kan navnet på serien)
 
 og
+
+Uformingen:
+
+Har valgt å putte search funksjonen inni header elementet og gjøre main til container
