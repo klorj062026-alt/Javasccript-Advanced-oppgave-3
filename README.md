@@ -35,3 +35,13 @@ og
 Uformingen:
 
 Har valgt å putte search funksjonen inni header elementet og gjøre main til container
+
+InnerHtml.
+
+Jeg fant ut at summary feltet til TvMaze inneholdt HTML tagger, noe som gjorde at .createTextNode inkluderte <p> og <b>(de liker visst å gjøre ting i bold selv) som rene strenger, noe som igjen ikke ser noe bra ut på nettsiden.
+
+Derfor valgte jeg å skifte det til InnerHtml i stedet, og istedet for å lage en tekstnode som jeg fester til elementet setter jeg det direkte som en streng som parses av nettleseren.
+
+Dette er noe en generelt sett ikke skal gjøre pga sikkerhetsrisikoer, i tillegg til at en har mer kontroll over DOM-noden med tradisjonell DOM manipulasjon, men tror det vil gå bra akkurat her.
+
+Jeg kunne ha begynt å surre med Regex og fått de til å fjerne taggene, men igjen... Tror det går fint.

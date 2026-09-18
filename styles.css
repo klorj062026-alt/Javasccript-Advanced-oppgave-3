@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(29, 29, 29);
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 3px 10px;
+  font-family: monospace;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: rgb(237, 235, 235);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.imdb_font {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+
+.search {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 1px 2px;
+  border-radius: 5px;
+  width: 480px;
+  height: 40px;
+  background-color: rgb(237, 235, 235);
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+search {
+  display: flex;
+}
+
+.search_btn {
+  max-height: 40px;
+}
+
+#tvShowContainer {
+  display: flex;
+  gap: 15px;
+  color: white;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.tv_card {
+  width: 350px;
+  background-color: rgb(95, 66, 112);
+  height: fit-content;
+  text-align: center;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 30px;
+  height: 600px;
+
+  overflow: scroll;
+}
+
+.tv_card::-webkit-scrollbar {
+  display: none;
+}
+
+.genre_txt,
+.rating_txt {
+  font-weight: bold;
+  font-size: 20px;
+}
+.descTxt {
+}
